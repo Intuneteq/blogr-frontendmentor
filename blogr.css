@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300&family=Overpass:wght@300;600&family=Roboto:ital,wght@0,100;0,300;1,100&family=Rubik:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    background-color: hsl(13, 100%, 72%);
+    padding: 30px 150px;
+    background-image: url('images/bg-pattern-intro-desktop.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 50px;
+    font-family: "Ubuntu";
+}
+
+#secintro {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Ubuntu";
+}
+
+#secintro img {
+    height: 28px;
+    width: 60px;
+    font-family: 'ubuntu';
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+#intro {
+    margin-left: -350px; 
+    display: flex;
+    align-items: center;
+}
+
+#intro a {
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+}
+
+#intro a:link {
+    text-decoration: none;
+}
+
+#intro a:hover {
+    text-decoration: underline;
+}
+
+.modalContainer {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    margin-top: 40px;
+    margin-left: 50px;
+    pointer-events: none; 
+}
+
+.modal {
+    
+    background-color: white;
+    height: 130px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'ubuntu';
+    /* margin-left: -500px; */
+}
+
+.modal ul a {
+    color: black;
+    font-weight: 100;
+    display: flex;
+    justify-content:left;
+    cursor: pointer;
+    padding: 20px 60px 20px 20px;
+    margin-bottom: -25px;
+}
+
+.modal ul a:link {
+    text-decoration: none;
+}
+
+.modal ul a:hover {
+    font-weight: 700;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#intro a img {
+    margin-right: 5px;
+    margin-left: -15px;
+    margin-top: -5px;
+
+}
+
+#login a button {
+    margin-right: 30px;
+    color: white;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#login a #sign {
+    background-color: hsl(355, 100%, 74%);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#login a #log {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header #sechead {
+    font-family: "Ubuntu";
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 100px 0;
+   color: white;
+}
+
+header #sechead h1 {
+    font-family: 'Overpass';
+    font-size: 50px;
+    font-weight: 300;
+}
+
+header #sechead span {
+    margin-bottom: 20px;
+}
+
+header #sechead article {
+    justify-content: space-evenly;
+}
+
+.joinUs {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#start {
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+}
+
+#learn {
+    color: hsl(355, 100%, 74%);
+}
+
+#section1 {
+    padding: 30px;
+    font-family: 'Overpass';
+}
+
+#section1 h3 {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#frame2 {
+    float: left;
+    margin-left: 60px;
+}
+
+#frame2 section h4 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#frame2 section p {
+    margin-bottom: 40px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#image1 img {
+    float: right;
+    width: 680px;
+    height: 680px;
+    margin-right: -220px; 
+    margin-top: -150px;
+}
+
+#section2 {
+    height: 450px;
+    background-color: hsl(237, 17%, 21%);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 550px;
+    background-image: url(bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -100px left -200px;
+    background-size: 1100px 1100px; 
+}
+
+#phone {
+    float: left;
+    margin-top: 60px;
+    margin-left: 90px;
+} 
+
+.frame3 {
+    float: right;
+    margin-top: 100px;
+    margin-right: 100px;
+    font-family: 'Overpass';
+    color: white;
+}
+
+.frame3 h4 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.frame3 p {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#section3 {
+    display: flex;
+    padding: 150px 0;
+}
+
+#image2 img{
+    width: 750px;
+    height: 600px;
+    margin-left: -850px;
+}
+
+.frame4 {
+    float: right;
+    margin-top: 150px;
+    font-family: 'Overpass';
+    margin-left: 40px;
+}
+
+.frame4 h4 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.frame4 p {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+footer {
+    border-top-right-radius: 50px;
+    color: hsl(240, 2%, 79%);
+    padding: 70px;
+    background-color: hsl(240, 10%, 16%);
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Ubuntu";
+}
+
+footer img {
+    height: 30px;
+    width: 80px;
+}
+
+footer section ul p {
+
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+footer section ul a {
+    color: hsl(240, 2%, 79%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+footer section ul a:link {
+    text-decoration: none;
+}
+
+footer section ul a:hover {
+    text-decoration: underline;
+
+}
